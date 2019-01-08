@@ -1,0 +1,52 @@
+
+#banner {
+    height: 100%;
+    width: 100%;
+    background: url("../../../../assets/image/banner.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 650px;
+  }
+  
+  #content-banner {
+    display: flex;
+    width: 100%;
+    padding: 0 15px;
+  }
+  
+  #content-banner h1 {
+    margin: 5px 0;
+    padding: 0;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  #content-banner div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  #content-banner .saibamais {
+    position: absolute;
+    bottom: 25px;
+    color: #ffffff;
+  }
+  
+  #content-banner .saibamais span {
+    margin-bottom: 8px;
+    color: #ffffff;
+  }
+  
+a.title-box {
+  text-decoration: none;
+}
+
+a.title-box:hover{
+  color: #fdb914;
+}
+.saibamais{
+  cursor: pointer;
+}

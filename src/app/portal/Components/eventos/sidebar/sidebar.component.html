@@ -1,0 +1,18 @@
+<div class="media">
+  <a class="pull-left" href="/evento/{{evento.id}}">
+    <img class="media-object" [src]="imagem" alt="Image">
+  </a>
+  <div class="media-body">
+
+    <button class="btn btn-default btn-xs" type="button">{{evento.data | date: 'dd/MM/yyyy'}}</button>
+    <h4 class="title-event-box">{{evento.titulo}}</h4>
+    <div style="display:  flex;">
+      <div class="label-event">
+        <img src="assets/image/icon-valor.png" alt="Image" width="17"> {{evento.valor == "0,00" ? "Gratuito" : "R$ "+ evento.valor}}
+      </div>
+      <div class="label-event">
+        <img src="assets/image/icone-local.png" alt="Image" width="14"> {{evento.local}}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,85 @@
+<app-header></app-header>
+<section id="about-page-banner">
+  <div class="container">
+    <h1>Apoio</h1>
+  </div>
+</section>
+
+<section id="about-page">
+  <div class="container">
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <h2>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+        consequat.
+      </h2>
+
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box-text" *ngIf="description" [innerHTML]="description | keepHtml">
+        
+    </div>
+
+  </div>
+  <!-- <hr> -->
+  <!-- <publicidade-marcas background="#FFFFFF"></publicidade-marcas> -->
+  <hr>
+  <div class="container">
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box-text">
+      <h3>Saiba como ser tornar um parceiro</h3>
+      <p>Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
+        quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel
+        eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis
+        at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
+        feugait nulla facilisi.</p>
+    </div>
+
+
+    <div class="col-xs-7 col-sm-7 col-md-6 ">
+
+      <form action="" method="POST" role="form" style="margin:10px 0 40px;">
+
+        <div class="form-group">
+          <label for="">Nome</label>
+          <input type="text" class="form-control" id="">
+        </div>
+        <div class="form-group">
+          <label for="">Email</label>
+          <input type="text" class="form-control" id="">
+        </div>
+        <div class="form-group">
+          <label for="">Telefone</label>
+          <input type="text" class="form-control" id="">
+        </div>
+        <div class="form-group">
+          <label for="">Empresa</label>
+          <input type="text" class="form-control" id="">
+        </div>
+        <div class="form-group">
+          <label for="">Mensagem</label>
+          <textarea name="" id="input${1/(\w+)/\u\1/g}" class="form-control" rows="3" required="required"></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-default">Enviar</button>
+      </form>
+
+    </div>
+
+    <div class="col-xs-5 col-sm-5 col-md-5 col-md-offset-1 box-contato">
+      <h2>Contato</h2>
+      <ul class="nav icones-footer">
+        <li>
+          <a href="#">
+            <img src="assets/image/icon-phone.png" alt> (11) 3500-6081</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/image/icon-msg.png" alt> contato@acorsp.com.br</a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+<app-newsletter></app-newsletter>
+<app-footer></app-footer>

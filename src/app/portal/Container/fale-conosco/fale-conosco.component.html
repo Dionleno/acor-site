@@ -1,0 +1,75 @@
+<app-header></app-header>
+
+<section id="about-page">
+  <div class="container">
+
+    <h1>Fale conosco</h1>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <h2>Preencha o formulário abaixo ou fale direto com a central de relacionamento da ACOR através do telefone ou email.
+      </h2>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="col-xs-12 col-sm-12 col-md-6 ">
+
+      <form [formGroup]="contatoFormGroup" (ngSubmit)="ngRegister()" style="margin:10px 0 40px;" novalidate role="form">
+        <div class="form-group">
+          <label for="">Nome</label>
+          <input type="text" class="form-control" name="name" autocomplete="name" formControlName="name">
+          <div class="error-message" *ngIf="contatoFormGroup.get('name').hasError('required') && (contatoFormGroup.get('name').dirty || contatoFormGroup.get('name').touched)">Campo obrigatorio</div>
+        </div>
+        <div class="form-group">
+          <label for="">Email</label>
+          <input type="text" class="form-control" name="email" autocomplete="email" formControlName="email">
+          <div class="error-message" *ngIf="contatoFormGroup.get('email').hasError('required') && (contatoFormGroup.get('email').dirty || contatoFormGroup.get('email').touched)">Campo obrigatorio</div>
+          <div class="error-message" *ngIf="contatoFormGroup.get('email').hasError('email') && (contatoFormGroup.get('email').dirty || contatoFormGroup.get('email').touched)">Email inválido!</div>
+        </div>
+        <div class="form-group">
+          <label for="">Telefone</label>
+          <input type="text" class="form-control" name="phone" autocomplete="phone" formControlName="phone">
+          <div class="error-message" *ngIf="contatoFormGroup.get('phone').hasError('required') && (contatoFormGroup.get('phone').dirty || contatoFormGroup.get('phone').touched)">Campo obrigatorio</div>
+        </div>
+        <div class="form-group">
+          <label for="">Empresa</label>
+          <input type="text" class="form-control" name="company" autocomplete="company" formControlName="company">
+          <div class="error-message" *ngIf="contatoFormGroup.get('company').hasError('required') && (contatoFormGroup.get('company').dirty || contatoFormGroup.get('company').touched)">Campo obrigatorio</div>
+        </div>
+        <div class="form-group">
+          <label for="">Mensagem</label>
+          <textarea name="" id="input${1/(\w+)/\u\1/g}" class="form-control" rows="3" required="required" name="message" autocomplete="messageform"
+            formControlName="messageform"></textarea>
+          <div class="error-message" *ngIf="contatoFormGroup.get('messageform').hasError('required') && (contatoFormGroup.get('messageform').dirty || contatoFormGroup.get('messageform').touched)">Campo obrigatorio</div>
+        </div>
+
+        <button type="submit" [disabled]="contatoFormGroup.status !== 'VALID'" class="btn btn-default">Enviar</button>
+      </form>
+
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-5 col-md-offset-1 box-contato">
+
+      <ul class="nav icones-footer">
+        <li class="colorOrange">Telefone</li>
+        <li class="colorGray">
+          (11) 3500-6081
+        </li>
+        <li class="colorOrange">Email</li>
+        <li class="colorGray">
+          contato@acorsp.com.br
+        </li>
+        <li class="colorOrange">Horário de atendimento</li>
+        <li class="">
+          Segunda a sexta-feira
+          <br />das 9h às 18h
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+
+</section>
+<app-newsletter></app-newsletter>
+<app-footer></app-footer>

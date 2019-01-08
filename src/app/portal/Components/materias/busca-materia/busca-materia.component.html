@@ -1,0 +1,16 @@
+<div class="box-content-post">
+  <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3">
+    <a href="/materias/{{materia.id}}">
+      <img class="img-responsive" alt="Image" [src]="imagem">
+    </a>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-8 col-lg-9">
+    <a href="/materias/{{materia.id}}">
+      <h2 class="title-feature">{{materia.titulo}}</h2>
+    </a>
+    <p class="description-feature" [innerHTML]="materia.linha_fina"></p>
+    <a class="btn btn-default btn-small" href="/materias/{{materia.id}}">
+      Leia mais
+    </a>
+  </div>
+</div>

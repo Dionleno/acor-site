@@ -1,0 +1,99 @@
+<app-header></app-header>
+
+<!---Materias -->
+<section id="event-page">
+
+  <div class="container-fluir" *ngIf="(evento | async)?.data as evt">
+
+    <div class="carousel slide" id="carousel-id" data-ride="carousel">
+
+      <div class="carousel-inner">
+
+        <div class="item active" [ngStyle]="{'background': 'url('+ urlBanner + evt.banner + ') no-repeat'}">
+
+          <div class="container">
+            <div class="carousel-caption">
+              <button class="btn btn-default btn-sm" type="button">{{evt.data | date: 'dd/MM/yyyy'}}</button>
+              <h1>{{evt.titulo}}</h1>
+              <div style="display:  flex;">
+                <div class="label-event">
+                  <img src="assets/image/icon-valor-white.png" alt="Image" width="25"> {{evento.valor == "0,00" ? "Gratuito" : "R$ "+ evt.valor.split(',')[0]}}
+                </div>
+                <div class="label-event">
+                  <img src="assets/image/icone-local-white.png" alt="Image" width="21"> {{evt.local}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+<!---Materias -->
+
+<section id="event-page-content">
+
+  <div class="container" style="padding:0;" *ngIf="(evento | async)?.data as evt">
+
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 item-evento-container">
+      <h2>{{evt.titulo}}</h2>
+      <p [innerHTML]="evt.descricao"></p>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <div style="display: flex;align-items: center;" *ngIf="evt.data <= today">
+        <a href="{{evt.site}}" class="btn btn-default btn-xs btn-comofoi" target="_blank">Veja como foi</a>
+      </div>
+      <div style="display: flex;align-items: center;" *ngIf="evt.data > today">
+        <a href="{{evt.site}}" class="btn btn-default btn-xs btn-saibamais" target="_blank">Saiba mais</a>
+      </div>
+      <div class="item-evento">
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object" src="assets/image/icon-time.png" alt="Image">
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">{{evt.data | date: 'dd/MM/yyyy'}}</h4>
+            <p>ás {{evt.horario}}</p>
+          </div>
+        </div>
+
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object" src="assets/image/icon-ticket.png" alt="Image">
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Valor</h4>
+            <p>{{evt.valor == "0,00" ? "Gratuito" : "R$ "+ evt.valor}}</p>
+          </div>
+        </div>
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object" src="assets/image/icon-local.png" alt="Image">
+          </a>
+          <div class="media-body">
+            <h4 class="media-heading">Local</h4>
+            <p>{{evt.local}}</p>
+          </div>
+        </div>
+        <div class="media">
+          <a class="pull-left" href="#">
+            <img class="media-object" src="assets/image/icon-link.png" alt="Image">
+          </a>
+          <div class="media-body">
+
+            <a href="{{evt.site}}" style="color:#585a5a;text-decoration:none;">Acesse o site do evento</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<app-newsletter></app-newsletter>
+<app-footer></app-footer>

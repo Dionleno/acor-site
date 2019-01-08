@@ -1,0 +1,22 @@
+<app-header></app-header>
+<section id="quem-somos-page">
+  <div class="container">
+    <app-sidebar-about sessao="2"></app-sidebar-about>
+
+    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10" *ngIf="(projeto | async)?.data as proj">
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h2>{{proj.objetivo}}</h2>
+      </div>
+      <h1>{{proj.nome}}</h1>
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 box-service">
+        <p [innerHTML]="proj.descricao"></p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+<app-newsletter></app-newsletter>
+<app-footer></app-footer>

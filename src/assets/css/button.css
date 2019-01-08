@@ -1,0 +1,32 @@
+.btn-danger,
+.btn-danger:hover {
+  background: #ffffff;
+  color: #fdb914;
+  border-color: #dddddd;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-default,
+.btn-default:hover,
+.btn-default:active,
+.btn-default:focus {
+  background: #fdc43b;
+  color: #ffffff;
+  font-weight: bold;
+  border-color: #fdb914;
+}
+
+.btn-black {
+  background: #585a5a;
+  color: #ffffff;
+  border-color: #585a5a;
+  font-weight: bold;
+}
+
+.btn-black:hover {
+  background: #6b6d6d;
+  color: #ffffff;
+  border-color: #6b6d6d;
+  font-weight: bold;
+}

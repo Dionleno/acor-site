@@ -1,0 +1,37 @@
+#trabalhe-page {
+    margin: 100px 0;
+  }
+  
+  #trabalhe-page h1 {
+    text-align: center;
+    color: #fdb914;
+    font-weight: bold;
+    position: relative;
+    font-size: 40px;
+  }
+  
+  #trabalhe-page h1:before {
+    content: " ";
+    width: 100px;
+    height: 2px;
+    position: absolute;
+    background: #fdb914;
+    bottom: -4px;
+    left: 50%;
+    margin-left: -50px;
+  }
+  
+  #trabalhe-page h2 {
+    font-size: 24px;
+    color: #aaaaaa;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  
+  #trabalhe-page h3 {
+    font-size: 24px;
+    color: #fdb914;
+    font-weight: bold;
+  }
+  
+  

@@ -1,0 +1,140 @@
+/*NEWS*/
+
+.navbar-form .form-control {
+  width: 100%;
+}
+
+#newsletter {
+  background: #fdb914;
+  min-height: 50px;
+  line-height: 50px;
+}
+
+#newsletter p {
+  font-size: 18px;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  line-height: 80px;
+  font-weight: bold;
+}
+
+.boxnewsletter {
+  width: calc(100% - 123px);
+}
+/*footer*/
+#submenu {
+  background: #fdb914;
+  color: #ffffff;
+  position: fixed;
+  top: 75px;
+  width: 100%;
+  z-index: 999;
+  display: none;
+}
+#footer {
+  padding: 35px 0 55px;
+}
+
+#footer .nav > li > a:hover,
+#submenu .nav > li > a:hover {
+  background-color: transparent;
+}
+
+#footer .nav > li > a,
+#submenu .nav > li > a {
+  color: #585a5a;
+  font-size: 14px;
+  padding: 3px 0px;
+}
+#submenu .nav > li > a {
+  color: #ffffff;
+}
+
+#footer .nav > li.active > a,
+#submenu .nav > li.active > a {
+  font-weight: bold;
+  font-size: 16px;
+  padding: 7px 0px;
+}
+#submenu .container div {
+  border-right: 1px solid #dfa313;
+  height: 219px;
+  padding: 30px 20px;
+}
+#submenu .container div:last-child {
+  border: 0;
+}
+ul.footer-image li:first-child {
+  border-bottom: 1px solid #f2f2f2;
+}
+ul.footer-image li.oculte:first-child {
+  border-bottom: 0px solid #f2f2f2;
+}
+ul.footer-image li {
+  padding: 20px 0;
+}
+
+ul.footer-image li p {
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+ul.icones-footer li {
+  padding: 8px 0;
+}
+
+ul.icones-footer > li > a {
+  font-size: 15px !important;
+}
+
+ul.icones-footer > li > a img {
+  padding-right: 7px;
+}
+
+ul.icones-footer li.active {
+  padding: 0px 0;
+}
+@media (max-width: 992px) {
+  #submenu .container div {
+    border-right: 1px solid #dfa313;
+    height: 145px;
+    padding: 20px 20px;
+  }
+  #submenu {
+    overflow-x: auto;
+  }
+  #content-banner {
+    display: flex;
+    width: 100%;
+    padding: 0 25px;
+  }
+  #content-banner h1 {
+    margin: 5px 0 20px;
+    padding: 0;
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  .box-content-post div {
+    margin-bottom: 20px;
+  }
+  #newsletter {
+    background: #fdb914;
+    min-height: 50px;
+    line-height: 18px;
+  }
+  #newsletter p {
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px 0;
+    margin: 0;
+    line-height: 18px;
+    font-weight: bold;
+  }
+  .boxnewsletter {
+    width: 100%;
+  }
+}

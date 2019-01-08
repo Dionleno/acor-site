@@ -1,0 +1,26 @@
+<app-header></app-header>
+<section id="quem-somos-page">
+
+    <div class="container">
+
+        <app-sidebar-about sessao="1"></app-sidebar-about>
+        <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10">
+            <h1>Quem Somos</h1>
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h2>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip
+                    ex ea commodo consequat.</h2>
+            </div>
+
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" *ngIf="description" [innerHTML]="description | keepHtml">
+                
+            </div>
+ 
+
+        </div>
+
+    </div>
+
+</section>
+<app-newsletter></app-newsletter>
+<app-footer></app-footer>

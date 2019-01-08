@@ -1,0 +1,8 @@
+<div class="media" [class.active]="video.active" (click)="ClickedVideo()">
+  <div class="pull-left">
+    <img class="media-object" [src]="imageUrl+video.thumbnail" alt="Image">
+  </div>
+  <div class="media-body">
+    <p [innerHTML]="(video.descricao.length>6)? (video.descricao | slice:0:130)+'..':(video.descricao)"></p>
+  </div>
+</div>

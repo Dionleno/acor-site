@@ -1,0 +1,20 @@
+<section id="newsletter">
+
+  <div class="container">
+
+    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
+      <p>Fique por dentro das novidades. Cadastre-se e receba nossa newsletter.</p>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+      <form class="navbar-form" role="search" style="line-height: 60px;">
+        <div class="form-group boxnewsletter">
+          <input class="form-control" ref-textEmail  type="text" placeholder="Oque você procura?">
+        </div>
+        <button class="btn btn-black" type="button" (click)="save(textEmail.value)" style="margin-top: 3px;">
+          CADASTRAR
+        </button>
+      </form>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,133 @@
+#event-page {
+  margin-top: 75px;
+}
+
+.title-box {
+  font-weight: bold;
+  font-size: 18px;
+  color: #585a5a;
+  margin: 10px 0;
+}
+
+.title-box span {
+  font-weight: 300;
+  font-size: 14px;
+  color: #a7a8a8;
+}
+
+.box-midia-sidebar {
+  margin: 15px 0;
+}
+
+.carousel-inner .item {
+  width: 100%;
+  height: 350px;
+  background-size: cover !important;
+}
+
+.carousel-control {
+  width: 5%;
+}
+
+.carousel-caption {
+  text-align: left;
+  left: 5%;
+  right: 5%;
+  bottom: 0%;
+}
+
+.carousel-caption h1 {
+  color: #fdb914;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.label-event {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.label-event:first-child {
+  margin-right: 25px;
+}
+
+#event-page-content {
+  margin: 50px 0;
+}
+
+#event-page-content h4,
+#sidebar-eventos h4 {
+  color: #fdb914;
+  font-weight: bold;
+}
+
+#event-page-content h4 {
+  font-size: 22px;
+}
+
+#sidebar-eventos h4 {
+  font-size: 16px;
+}
+
+#event-page-content .label-event {
+  font-weight: bold;
+  color: #585a5a;
+}
+
+.item-evento-container h2 {
+  margin-top: 0;
+  color: #fdb914;
+  font-weight: bold;
+}
+
+/*sidebar*/
+.item-evento {
+  border: 1px solid #dddddd;
+  padding: 15px 0;
+  margin-top: 30px;
+  border-radius: 5px;
+}
+.item-evento .media {
+  padding: 2px 20px;
+  border-bottom: 1px solid #dddddd;
+}
+.item-evento .media:last-child {
+  border: 0px !important;
+}
+.item-evento .media .media-heading {
+  color: #585a5a !important;
+  font-weight: normal;
+}
+
+.btn-comofoi {
+  width: 100%;
+  height: 40px;
+  padding: 1px 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 36px;
+  background: #00a55b;
+  border-color: #00a55b;
+}
+.btn-saibamais {
+  width: 100%;
+  height: 40px;
+  padding: 1px 22px;
+  text-transform: uppercase;
+  color: #ffffff;
+  line-height: 36px;
+  text-transform: uppercase;
+  font-size: 14px;
+  background: #fdb914;
+  border-color: #fdb914;
+}
+
+.box-sugestao h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fdb914;
+  margin: 0 0 5px;
+}

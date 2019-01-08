@@ -1,0 +1,94 @@
+#event-page {
+  margin-top: 95px;
+}
+
+.title-box {
+  font-weight: bold;
+  font-size: 18px;
+  color: #585a5a;
+  margin: 10px 0;
+}
+
+.title-box span {
+  font-weight: 300;
+  font-size: 14px;
+  color: #a7a8a8;
+}
+
+.box-midia-sidebar {
+  margin: 15px 0;
+}
+
+.carousel-inner .item {
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+}
+
+.carousel-control {
+  width: 5%;
+}
+
+.carousel-caption {
+  text-align: left;
+  left: 5%;
+  right: 5%;
+  bottom: 0%;
+}
+
+.carousel-caption h1 {
+  color: #fdb914;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.label-event {
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.label-event:first-child {
+  margin-right: 25px;
+}
+
+#event-page-content {
+  margin: 15px 0;
+}
+
+#event-page-content h4,
+#sidebar-eventos h4 {
+  color: #fdb914;
+  font-weight: bold;
+}
+
+#event-page-content h4 {
+  font-size: 22px;
+}
+
+#sidebar-eventos h4 {
+  font-size: 16px;
+}
+
+#event-page-content .label-event {
+  font-weight: bold;
+  color: #585a5a;
+}
+
+
+
+/*sidebar*/
+
+.box-sugestao {
+  display: flex;
+  flex-direction: row;
+  padding: 13px;
+  border: 1px solid #f1f1f1;
+}
+
+.box-sugestao h3 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fdb914;
+  margin: 0 0 5px;
+}

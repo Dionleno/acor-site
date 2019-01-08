@@ -1,0 +1,24 @@
+<app-header></app-header>
+
+<section id="about-page">
+  <div class="container">
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h1>Links úteis</h1>
+      <h2>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+        consequat.
+      </h2>
+    </div>
+    
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" *ngIf="(links | async)?.data as lks">
+      <div *ngFor="let link of lks">
+          <h3>{{link.titulo}}</h3>
+          <a [href]="link.link" target="_blank">
+              {{link.link}}
+          </a>
+      </div>
+    </div>
+  </div>
+</section>
+<app-newsletter></app-newsletter>
+<app-footer></app-footer>

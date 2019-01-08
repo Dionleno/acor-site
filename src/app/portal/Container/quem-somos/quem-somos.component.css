@@ -1,0 +1,51 @@
+#quem-somos-page {
+    margin: 100px 0;
+}
+
+#quem-somos-page h1 {
+    text-align: center;
+    color: #fdb914;
+    font-weight: bold;
+    position: relative;
+    font-size: 40px;
+}
+:host ::ng-deep h2,:host ::ng-deep h1{
+    font-size: 24px;
+  }
+  :host ::ng-deep p{
+    font-size: 18px;
+    color: #585a5a;
+  }
+#quem-somos-page h1:before {
+    content: ' ';
+    width: 34px;
+    height: 2px;
+    position: absolute;
+    background: #fdb914;
+    bottom: -4px;
+}
+
+#quem-somos-page h2 {
+    font-size: 24px;
+    color: #aaaaaa;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+#quem-somos-page h3 {
+    font-size: 24px;
+    color: #fdb914;
+    font-weight: bold;
+}
+
+.boxsidebar>li>a {
+    padding: 0;
+    color: #585a5a;
+
+}
+
+.boxsidebar>li>a.active {
+    padding: 0;
+    color: #fdb914;
+
+}

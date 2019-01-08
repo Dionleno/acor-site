@@ -1,0 +1,63 @@
+#about-page-banner {
+  height: 250px;
+  width: 100%;
+  margin-top: 75px;
+  background: url("../../../../assets/image/banner-about.jpg") no-repeat;
+  background-size: cover;
+}
+
+#about-page-banner h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+  position: relative;
+  font-size: 55px;
+  margin-top: 80px;
+}
+
+#about-page-banner h1:before {
+  content: " ";
+  width: 34px;
+  height: 2px;
+  position: absolute;
+  background: #ffffff;
+  bottom: -4px;
+}
+
+#about-page {
+  text-align: center;
+  padding: 50px 0;
+}
+
+#about-page h2 {
+  font-size: 32px;
+  color: #aaaaaa;
+  padding-bottom: 40px;
+}
+
+#about-page .thumbnail {
+  border: 0;
+}
+
+#about-page .thumbnail img {
+  height: 150px;
+}
+
+#about-page .thumbnail h3 {
+  color: #fdb914;
+  position: relative;
+}
+
+#about-page .thumbnail h3:before {
+  content: " ";
+  width: 40%;
+  height: 2px;
+  position: absolute;
+  background: #fdb914;
+  bottom: -4px;
+  left: 30%;
+}
+
+#about-page .thumbnail p {
+  margin: 20px 0;
+}

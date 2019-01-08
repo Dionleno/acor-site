@@ -1,0 +1,128 @@
+<section id="header-fixed">
+
+  <div class="navbar navbar-primary navbar-fixed-top">
+    <a class="navbar-brand" href="#">
+      <img class="hidden-xs hidden-sm" src="assets/image/logohorizontal.png" alt="Image">
+      <img class="visible-xs visible-sm" src="assets/image/logomobile.png" alt="Image">
+    </a>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="hidden-xs">
+        <form class="navbar-form navbar-left" role="search" style="padding-top:3px;">
+          <div class="form-group">
+            <input class="form-control" #buscas type="text" placeholder="Oque você procura?">
+          </div>
+          <button class="btn btn-default" type="submit" (click)="busca(buscas)" style="margin-left:5px;">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+          </button>
+        </form>
+      </li>
+      <!-- <li class="hidden-xs" style="padding: 10px;">
+        <button class="btn btn-danger" type="button">
+          <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+          Login</button>
+      </li> -->
+      <!-- <li class="hidden-xs" style="padding: 10px;">
+        <button class="btn btn-default" href="/associado" type="button">Seja um associado</button>
+      </li> -->
+      <li>
+        <button class="navbar-toggle navbar-toggle-right-color menunav" id type="button">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
+<div class="navbar-ex1-collapse" id="submenu">
+  <div class="container">
+
+    <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
+      <ul class="nav">
+        <li class="active">
+          <a href="/materias">Notícias</a>
+        </li>
+        <li class="active">
+          <a href="/eventos">Calendário</a>
+        </li>
+        <li class="active">
+          <a href="#">Vídeos</a>
+        </li>
+        <li class="active">
+          <a href="/links-uteis">Links úteis</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
+      <ul class="nav">
+        <li class="active">
+          <a href="/quem-somos">Sobre a ACOR</a>
+        </li>
+        <li>
+          <a href="/quem-somos">Quem Somos</a>
+        </li>
+        <li>
+          <a href="/nossos-projetos">Nossos Projetos</a>
+        </li>
+        <li>
+          <a href="/trabalhe-conosco">Trabalhe conosco</a>
+        </li>
+        <li>
+          <a href="/imprensa">Imprensa</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2">
+      <ul class="nav">
+        <li class="active">
+          <a href="/associado">Seja um associado</a>
+        </li>
+        <li class="active">
+          <a href="/apoio">Apoio</a>
+        </li>
+        <!-- <li class="active">
+          <a href="#">Validação</a>
+        </li> -->
+        <li class="active">
+          <a href="/fale-conosco">Fale Conosco</a>
+        </li>
+
+      </ul>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
+      <ul class="nav icones-footer">
+        <li class="active">
+          <a href="/fale-conosco">Fale com a ACOR</a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="assets/image/icon-phone-white.png" alt> (11) 3500-6081</a>
+        </li>
+        <!-- <li>
+          <a href="#">
+            <img src="assets/image/icon-msg-white.png" alt> contato@acorsp.com.br</a>
+        </li> -->
+        <li>
+          <a href="http://facebook.com/acorsp" target="_blank">
+            <img src="assets/image/icon-face-white.png" alt> facebook.com/acorsp</a>
+        </li>
+        <li>
+          <a href="https://www.instagram.com/acor_sp/" target="_blank">
+            <img src="assets/image/icn-instagram-branco.png" alt> instagram.com/acor_sp/</a>
+        </li>
+      </ul>
+    </div>
+    <!-- <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" style="padding: 10px;">
+      <ul class="nav footer-image">
+        <li class="oculte">
+          <img class="img-responsive" src="assets/image/banner-submenu.jpg" alt="Image">
+        </li>
+
+      </ul>
+    </div> -->
+
+  </div>
+</div>

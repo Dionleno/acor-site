@@ -1,0 +1,54 @@
+<app-header></app-header>
+
+<!---Materias -->
+<section id="detalhes-materia-page">
+
+  <div class="container" style="max-width: 900px" *ngIf="materia as mat">
+    <div>
+      <h1 class="title-other" style="text-align:left;">{{mat.titulo}}</h1>
+      <p [innerHTML]="mat.linha_fina"></p>
+    </div>
+
+    <hr>
+    <div class="date-social">
+      <div>
+        <strong>{{mat.updated_at | date: 'dd/MM/yyyy'}} ás {{mat.updated_at | date: 'H:mm'}}</strong>
+        <br>
+        <span>Por ACOR</span>
+      </div>
+      <div>
+
+        <ul>
+          <li>compartilhar</li>
+          <li>
+            <img src="assets/image/icon-face.png" alt width="20">
+          </li>
+          <li>
+            <img src="assets/image/icon-msg.png" alt>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <hr>
+
+    <p [innerHTML]="mat.texto"></p>
+  </div>
+
+</section>
+<!---Materias -->
+<hr>
+<section *ngIf="materias.length > 0">
+  <div class="container-fluid">
+    <h2 class="title-other">Outras matérias</h2>
+    <div class="other-post">
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" *ngFor="let item of materias">
+
+        <materia-verticais [materia]="item"></materia-verticais>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-newsletter></app-newsletter>
+<app-footer></app-footer>

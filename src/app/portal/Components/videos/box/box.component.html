@@ -1,0 +1,17 @@
+<section id="box-videos">
+  <div class="container" *ngIf="videos">
+
+    <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7" style="padding: 0">
+      <div class="videoWrapper">
+        <iframe [src]="videoView.linkCurrent" width="100%" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5" style="padding: 0">
+      <video-lista *ngFor="let video of videos" [video]="video" (SelectedVideo)="videoSelecionado($event)"></video-lista>
+
+      <div class="media-read-more">
+        Leia mais
+      </div>
+    </div>
+  </div>
+</section>

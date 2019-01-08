@@ -1,0 +1,56 @@
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+.navbar-toggle-right,
+.navbar-toggle-right-color {
+  display: block !important;
+}
+.navbar-default .navbar-toggle-right:hover,
+.navbar-default .navbar-toggle-right:active {
+  background-color: transparent;
+}
+.navbar-default .navbar-toggle-right {
+  border: 0;
+  border-color: #ddd;
+}
+
+.navbar-toggle .icon-bar {
+  display: block;
+  width: 33px;
+  height: 4px;
+  border-radius: 0px;
+}
+
+.navbar-default .navbar-toggle-right .icon-bar {
+  background-color: #ffffff;
+}
+
+.navbar-primary {
+  background-color: #ffffff;
+  border-bottom: 1px solid #f2f2f2;
+  padding: 10px 0;
+}
+
+.navbar-primary .navbar-toggle-right-color .icon-bar {
+  background-color: #fdb914;
+}
+
+.navbar-default,
+.navbar-default:hover {
+  background-color: transparent;
+  border-color: transparent;
+  padding: 20px 0;
+}
+@media (max-width: 992px) {
+  .navbar-primary {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  #header-fixed {
+    display: block;
+    margin-bottom: 75px;
+  }
+}

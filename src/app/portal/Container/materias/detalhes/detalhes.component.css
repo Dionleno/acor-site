@@ -1,0 +1,87 @@
+.date-social {
+  display: flex;
+}
+
+.date-social div {
+  flex-direction: column;
+}
+
+.date-social div:last-child {
+  align-items: flex-end;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.date-social ul {
+  list-style: none;
+}
+
+.date-social ul li {
+  float: left;
+  padding: 0 5px;
+}
+
+/*conteudo materia*/
+
+.title-box {
+  font-weight: bold;
+  font-size: 18px;
+  color: #585a5a;
+  margin: 10px 0;
+}
+
+.title-box span {
+  font-weight: 300;
+  font-size: 14px;
+  color: #a7a8a8;
+}
+
+h2.title-feature,
+h2.title-feature-box {
+  padding: 0;
+  margin: 0px 0 15px;
+  color: #fdb914;
+  font-weight: bold;
+}
+
+h2.title-feature-box {
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+p.description-feature {
+  color: #585a5a;
+  font-size: 16px;
+}
+
+/*materias*/
+
+.other-post {
+  width: 100%;
+  float: left;
+}
+
+.other-post div {
+  margin: 20px 0;
+}
+
+.title-other {
+  text-align: center;
+  color: #fdb914;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#detalhes-materia-page {
+  margin: 90px 0 50px;
+}
+.right {
+  padding: 5px;
+  float: right;
+}
+.left {
+  padding: 5px;
+
+  float: left;
+}

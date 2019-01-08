@@ -1,0 +1,16 @@
+
+.boxsidebar li:hover{
+background: #FFFFFF;
+}
+.boxsidebar > li > a {
+    padding: 0;
+    color: #585a5a;
+  }
+  
+  .boxsidebar > li > a.active {
+    padding: 0;
+    color: #fdb914;
+  }
+  .nav>li>a:hover, .nav>li>a:focus {
+    background-color: transparent;
+}

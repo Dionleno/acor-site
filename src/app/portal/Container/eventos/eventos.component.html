@@ -1,0 +1,148 @@
+<app-header></app-header>
+<!---Materias -->
+<section id="event-page">
+
+  <div class="container" *ngIf="(evento | async)?.data[0] as evt">
+
+    <div class="carousel slide" id="carousel-id" data-ride="carousel">
+
+      <div class="carousel-inner">
+
+        <div class="item active" style="background: url(assets/image/banner-evento.jpg) no-repeat;">
+
+          <div class="container">
+            <div class="carousel-caption">
+              <button class="btn btn-default btn-sm" type="button">{{evt.data | date: 'dd/MM/yyyy'}}</button>
+              <h1>{{evt.titulo}}</h1>
+              <div style="display:  flex;">
+                <div class="label-event">
+                  <img src="assets/image/icon-valor-white.png" alt="Image" width="25"> {{evento.valor == "0,00" ? "Gratuito" : "R$ "+ evt.valor.split(',')[0]}}
+                </div>
+                <div class="label-event">
+                  <img src="assets/image/icone-local-white.png" alt="Image" width="21"> {{evt.local}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <a class="left carousel-control" data-slide="prev" href="#carousel-id">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+      </a>
+      <a class="right carousel-control" data-slide="next" href="#carousel-id">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+      </a> -->
+    </div>
+  </div>
+
+</section>
+<!---Materias -->
+<section id="event-page-content">
+
+  <div class="container" style="padding:0;">
+
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+      <div class="col-sm-6" style="padding:0;">
+        <h4>Próximos eventos</h4>
+      </div>
+      <div class="col-sm-6" style="padding:0;">
+        <div class="input-group" style="margin-top:3px;">
+          <input class="form-control" id="exampleInputAmount" type="text" placeholder="Buscar eventos">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+
+              <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+
+            </button>
+          </span>
+        </div>
+
+      </div>
+      <hr>
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:0;">
+        <hr style="margin-top:0;">
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:0;" *ngIf="event.length > 0">
+        <evento-sidebar *ngFor="let evt of event" [evento]="evt"></evento-sidebar>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:0;" *ngIf="event.length == 0">
+
+        <div class="alert alert-warning">
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+          <strong>Ops!</strong> Nenhum evento novo cadastrado!
+        </div>
+
+
+      </div>
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center hidden">
+
+        <ul class="pagination">
+          <li>
+            <a href="#">&laquo;</a>
+          </li>
+          <li>
+            <a href="#">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">4</a>
+          </li>
+          <li>
+            <a href="#">5</a>
+          </li>
+          <li>
+            <a href="#">&raquo;</a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+      <div class="box-sugestao">
+        <div>
+          <h3>Sugestão de eventos</h3>
+          <p>Indique um evento para ser incluido em nosso cadastro</p>
+        </div>
+        <div style="display: flex;align-items: center;">
+          <button class="btn btn-default btn-xs" type="button" style="height:40px;padding:1px 22px;">Indicar</button>
+        </div>
+
+      </div>
+
+      <div class="box-midia-sidebar">
+        <span class="txtmidia">Publicidade</span>
+        <img class="img-responsive" src="assets/image/midia.jpg" alt="Image">
+
+      </div>
+
+
+
+      <div id="sidebar-eventos">
+        <div class="title-box">
+          Últimos eventos
+          <span>| Ver mais</span>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding:0;" *ngIf="eventosSidebar.length > 0">
+          <evento-sidebar *ngFor="let evt of eventosSidebar" [evento]="evt"></evento-sidebar>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<app-newsletter></app-newsletter>
+<app-footer></app-footer>
